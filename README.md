@@ -6,7 +6,7 @@ This repository contains the code for an end-to-end machine learning application
 
 ## Architecture
 
-1. **Machine Learning Model**: [Description of the model, e.g., a regression model built using TensorFlow/PyTorch, etc.]
+1. **Machine Learning Model**: Linear Regression
 2. **AWS Elastic Beanstalk**: Used for deploying the web application.
 3. **AWS CodePipeline**: Automates the build, test, and deploy phases whenever there's a change to the repository.
 
@@ -20,7 +20,6 @@ This repository contains the code for an end-to-end machine learning application
 
 - AWS account
 - AWS CLI configured
-- [Any other software/tool/library needed to run your code]
 
 ## Setup & Deployment
 
@@ -29,7 +28,7 @@ This repository contains the code for an end-to-end machine learning application
 3. **Deployment**:
     1. Navigate to the root directory of the project.
     2. Run `eb init` to initialize the Elastic Beanstalk environment.
-    3. Deploy using `eb create [environment-name]` (replace `[environment-name]` with your preferred name).
+    3. Deploy using `eb create env` (replace `env` with your preferred name).
 4. **CI/CD**: 
     1. Head over to AWS CodePipeline and create a new pipeline.
     2. Connect this GitHub repository as the source.
